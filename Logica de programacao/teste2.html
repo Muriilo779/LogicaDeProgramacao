@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+
+ function sorteio(n) {
+
+  	return Math.round(Math.random() * n);
+ }
+
+ var numeroPensado = sorteio(10);
+
+ var chute = parseInt(prompt("já pensei num numero ai muleke, tenta adivinha pivete"));
+ 	
+ 	if(chute == numeroPensado) {
+
+ 		document.write("não é que tu acertou, eu realmente pensei no" + numeroPensado " vo te deixar vazar muleke");
+ 	} else {
+
+ 		document.write("tu errou obviamente, tiro no pé ou na mão?");
+ 	}
+ </script>  

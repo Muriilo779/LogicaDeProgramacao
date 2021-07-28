@@ -1,0 +1,35 @@
+
+<script>
+
+    var loginCadastrado = "XxMuriloxX";
+    var senhaCadastrada = "abacate";
+
+    var tentativaAtual = 1
+    var maximoDeTentativas = 3
+ 
+    while (tentativaAtual <= maximoDeTentativas) {
+
+    	var loginInformado = prompt("Informe seu login");
+    	var senhaInformada = prompt("Informe sua senha");
+
+    if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+        alert("Bem-vindo ao sistema " + loginInformado);
+        tentativaAtual = maximoDeTentativas 
+
+    } else {
+
+        if (tentativaAtual == maximoDeTentativas) {
+        	alert("Acabou suas chances kkkk, perdeu pra sempre sua playlist de musica no ytbe");
+
+        } else {
+
+        alert("Login inválido. Tente novamente");
+
+    		}
+    }
+    tentativaAtual = tentativaAtual + 1 
+} 
+
+
+</script>
